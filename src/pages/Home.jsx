@@ -35,7 +35,7 @@ const Home = ({ foodItems, reviews, addToCart }) => {
               <FoodCard
                 key={item.id}
                 {...item}
-                onAddToCart={() => addToCart(item)}
+                onAddToCart={() => addToCart(item)} // Ensure this function is passed correctly
               />
             ))}
           </div>

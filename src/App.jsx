@@ -142,7 +142,7 @@ function App() {
               />
             } 
           />
-          <Route path="/menu" element={<Menu />} />
+          <Route path="/menu" element={<Menu addToCart ={addToCart}/>} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

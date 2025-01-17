@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import FoodCard from '../components/FoodCard';
 
-const Menu = () => {
+const Menu = ({addToCart}) => {
   const [selectedCategory, setSelectedCategory] = useState('All');
 
   const categories = ['All', 'Pizza', 'Burger', 'Pasta', 'Sushi', 'Dessert', 'Salad'];
@@ -125,7 +125,7 @@ const Menu = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            <FoodCard {...item} />
+            <FoodCard {...item} onAddToCart={() => addToCart(item)} /> {/* Corrected here */}
           </motion.div>
         ))}
       </motion.div>

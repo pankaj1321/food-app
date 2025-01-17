@@ -59,67 +59,13 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #ffffff;
   cursor: pointer;
+
   transition: border-color 0.25s;
 }
 button:hover {
   border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-/* Slider custom styles */
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  user-select: none;
-  touch-action: pan-y;
-}
-
-.slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slick-slide {
-  position: relative;
-  display: none;
-  float: left;
-  height: 100%;
-  min-height: 1px;
-}
-
-.slick-slide.slick-active {
-  display: block;
-}
-
-.slick-dots {
-  position: absolute;
-  bottom: 25px;
-  display: flex !important;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  justify-content: center;
-  z-index: 1;
 }
 
 @media (prefers-color-scheme: light) {
@@ -130,7 +76,5 @@ button:focus-visible {
   a:hover {
     color: #747bff;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+
 }
